@@ -34,6 +34,22 @@ flowchart LR
 
 `TypeScript` · `Next.js` · `NestJS` · `PostgreSQL` · `Prisma` · `Redis` · `LLM` · `ЮKassa`
 
+## Обезличенный пример контракта
+
+```ts
+type EstimateRequest = {
+  source: 'voice' | 'text';
+  workItems: string[];
+};
+
+type CommercialOffer = {
+  lines: Array<{ title: string; quantity: number; price: number }>;
+  total: number;
+};
+```
+
+*Это схематичный публичный контракт, а не production-код или данные клиентов.*
+
 ## О репозитории
 
 Это публичная витрина продукта. Production-код, данные клиентов, конфигурация инфраструктуры и секреты намеренно не публикуются.
